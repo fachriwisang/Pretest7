@@ -53,20 +53,39 @@
     color: black;
     cursor: pointer;
     font-weight: bold;
+}#welcome-box h3{
+    margin: 0;
+    font-size: 22px;
+}
+
+#welcome-box h2{
+    margin: 5px 0;
+    font-size: 36px;
+}
+
+#welcome-box p{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #dcdcdc;
 }
         </style>
         <title></title>
     </head>
     <body>
-        <div id="overlay"></div>
-        <div id="welcome-box">
-    <h2>PETA WEBGIS<br>HALTE KEDIRI</h2>
-    <button onclick="
+       <div id="overlay"></div>
+
+<div id="welcome-box">
+<h3>PETA WEBGIS</h3>
+<h2>HALTE KEDIRI</h2>
+<p>Fachri Wisang</p>
+
+<button onclick="
 document.getElementById('welcome-box').style.display='none';
 document.getElementById('overlay').style.display='none';
 ">
-        MASUK
-    </button>
+MASUK
+</button>
+
 </div>
         <div id="map">
         </div>
