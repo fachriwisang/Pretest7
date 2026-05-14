@@ -19,10 +19,41 @@
             padding: 0;
             margin: 0;
         }
+        #welcome-box{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #114ebd;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    z-index: 9999;
+    color: white;
+    font-family: Arial;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+#welcome-box button{
+    margin-top: 15px;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 20px;
+    background: cyan;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
         </style>
         <title></title>
     </head>
     <body>
+        <div id="welcome-box">
+    <h2>PETA WEBGIS<br>HALTE KEDIRI</h2>
+    <button onclick="document.getElementById('welcome-box').style.display='none'">
+        MASUK
+    </button>
+</div>
         <div id="map">
         </div>
         <script src="js/qgis2web_expressions.js"></script>
